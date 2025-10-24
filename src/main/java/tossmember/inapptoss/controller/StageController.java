@@ -65,7 +65,7 @@ public class StageController {
     }
 
     // 플레이어의 전체 스테이지 클리어 정보 조회
-    @GetMapping("/progress/{playerId")
+    @GetMapping("/progress/{playerId}")
     public ResponseEntity<Map<String, Object>> getStageProgress(@PathVariable String playerId) {
         StageProgress progress = stageService.getProgress(playerId);
 
